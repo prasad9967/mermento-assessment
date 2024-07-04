@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.body-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#master{
+    height: 500px;
+}
+
+.size-images{
+    display:flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.display{
+    height: 60px;
+    width: 60px;
+}
+
+
+.body{
+    background-color: #FCF7FF;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 55%;
+}
+
+#head1 {
+    color: #C4CAD0;
+    font-size: 1rem;
+}
+
+#price{
+    display: inline-block;
+}
+
+#discount{
+    margin-left: 0.5rem;
+    color: #F95738;
+
+}
+
+#compare_price{
+    margin: auto 0px;
+}
+
+.color-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.color-box{
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.color-box:hover{
+    border: 2px solid #000;
+}
+
+
+
+#box1{
+    background-color:lightcoral;
+}
+
+#box2{
+    background-color: olivedrab;
+}
+#box3{
+    background-color: rgb(222, 41, 101);
+}
+#box4{
+    background-color: deepskyblue;
+}
+
+.radios{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 0.5rem;
+}
+
+.radio{
+    background-color: lightgrey;
+    border-radius:10px;
+    padding: 5px;
+}
+
+label, .clickable{
+    cursor: pointer;
+}
+
+span{
+    font-weight: bold;
+}
+
+#details{
+    display: none;
+    font-size: 0.7rem;
+    background-color: #F4D35E;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 10px;
+    }
+
+#btn2 {
+    background-color:lightgrey ;
+    color:rgb(34, 34, 74);
+    font-weight: 100;
+    border-radius: 12px;
+    padding:10px;
+    margin-right:15px;
+}
+
+#btn3 {
+    background-color:rgb(34, 34, 74);
+    color:beige;
+    border-radius: 12px;
+    padding:10px;
+    margin-right:15px;
+    margin-right:15px;
+    cursor: pointer;
+}
+
+#desc{
+    width: 100%;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+    #master{
+        height: 300px;
+    }
+}

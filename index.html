@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Mermento Assessment</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="image-container">
+            <div>
+                <img alt="product image" src="./image.png" id="master"/>
+            </div>
+            <div class="size-images">
+                <img alt="display image" src="./image.png" class="display"/>
+                <img alt="display image" src="./image.png" class="display"/>
+                <img alt="display image" src="./image.png" class="display"/>
+                <img alt="display image" src="./image.png" class="display"/>
+            </div>
+        </div>
+        <div class="body">
+            <h4 id="head1"></h4>
+            <h2 id="head2">Embrace SideBoard</h2>
+            <hr/>
+            <div>
+                <h2 id="price"></h2>
+                <span id="discount">35% Off</span>
+                <h5 id="compare_price"></h5>
+            </div>
+            <hr>
+            <h4 style="color: #C4CAD0">Chooose a color</h4>
+            <div class="color-container">
+                <div class="color-box" id="box1"></div>
+                <div class="color-box" id="box2"></div>
+                <div class="color-box" id="box3"></div>
+                <div class="color-box" id="box4"></div>
+            </div>
+            <hr>
+                <h4 style="color: #C4CAD0">Chooose a size</h4>
+                <div class="radios">
+                <div class="radio"><input id="r1" type="radio" name="size" value="Small"/><label for="r1">Small</label></div>
+                <div class="radio"><input id="r2" type="radio" name="size" value="Medium"/><label for="r2">Medium</label></div>
+                <div class="radio"><input id="r3" type="radio" name="size" value="Large"/><label for="r3">Large</label></div>
+                <div class="radio"><input id="r4" type="radio" name="size" value="Extra Large"><label for="r4">Extra Large</label></div>
+                <div class="radio"><input id="r5" type="radio" name="size" value="XXL"><label for="r5">XXL</label></div>
+                </div>
+            <div class="buttons">
+                <div id="btn2"><span class="clickable" onclick="updateCount(-1)">-</span>&nbsp&nbsp&nbsp&nbsp<span id="count_value"></span>&nbsp&nbsp&nbsp&nbsp<span onclick="updateCount(+1)" class="clickable">+</span></div>
+                <button id="btn3" onclick="showDetails()">Add To Cart</button>
+            </div>
+            <p id="details"></p>
+            <hr>
+            <P id="desc"></P>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
